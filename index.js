@@ -3,4 +3,4 @@ import { render } from "react-dom";
 
 import Presentation from "./presentation";
 
-render(<Presentation/>, document.getElementById("root"));
+render(<Presentation />, document.getElementById("root"));
