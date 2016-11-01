@@ -46,6 +46,9 @@ module.exports = {
     }, {
       test: /\.svg$/,
       loader: "url?limit=10000&mimetype=image/svg+xml"
+    }, {
+      test: /\.example$/,
+      loader: "raw"
     }]
   }
 };
