@@ -4,6 +4,14 @@
   "version": "0.0.0",
   "description": "Slides for my talk about JavaScript Shells",
   "main": "index.js",
+  "bin": {
+    "js-shell-simple": "./demo/js-shell-simple.js",
+    "js-shell-evented": "./demo/js-shell-evented.js",
+    "js-shell-exec": "./demo/js-shell-exec.js",
+    "js-shell": "./demo/js-shell-exec.js",
+    "vorpal": "./demo/vorpal.js",
+    "awkward": "./node_modules/.bin/awkward"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
@@ -14,10 +22,12 @@
   "author": "Denys Dovhan <email@denysdovhan.com> (http://denysdovhan.com)",
   "license": "MIT",
   "dependencies": {
+    "awkward": "^1.0.9",
     "normalize.css": "5.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "spectacle": "^1.0.0"
+    "spectacle": "^1.0.0",
+    "vorpal": "^1.11.4"
   },
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
