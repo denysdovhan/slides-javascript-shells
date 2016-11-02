@@ -1,0 +1,23 @@
+import 'shelljs/global'
+
+if (!which('git')) {
+  echo('Sorry, this script requires git')
+  exit(1)
+}
+
+// Copy files to release dir
+rm('-rf', 'out/Release')
+cp('-R', 'stuff/', 'out/Release')
+
+// Replace version in each .js file
+cd('lib')
+ls('*.js').forEach(
+    file => sed('-i', 'BUILD_VERSION', 'v0.1.2', file)
+)
+cd('..')
+
+// Run external tool synchronously
+if (exec('git commit -am "Auto-commit"').code !== 0) {
+  echo('Error: Git commit failed')
+  exit(1)
+}

@@ -1,0 +1,23 @@
+// ...
+shell
+  .on('line', (line) => { ... })
+  .on('close', () => { ... })
+  // The input stream was paused earlier or receives the SIGCONT event
+  .on('pause', () => console.log('Readline is paused.'))
+  // Emitted whenever the input stream is resumed.
+  .on('resume', () => console.log('Readline is resumed.'))
+  // `prompt` will automatically resume the stream after `fg %js-shell`
+  .on('SIGCONT', () => {
+    console.log('SIGCONT');
+    shell.prompt();
+  })
+  // Emitted whenever the input gets end-of-text code
+  .on('SIGINT', () => {
+    console.log('SIGINT')
+    shell.question('Are you sure you want to exit? ', (answer) => {
+      if (answer.match(/^y(es)?$/i)) {
+        process.exit(0);
+      }
+      shell.prompt();
+    });
+  });

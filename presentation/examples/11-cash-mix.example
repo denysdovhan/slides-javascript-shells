@@ -1,0 +1,4 @@
+$ ipconfig | grep IPv4 | sort
+IPv4 Address. . . . . . . . . . . : 10.10.40.50
+IPv4 Address. . . . . . . . . . . : 192.168.100.11
+$ █
