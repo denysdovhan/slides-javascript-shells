@@ -64,9 +64,7 @@ export default class Presentation extends React.Component {
         <Deck transition={["fade"]} transitionDuration={500}>
 
           <Slide bgImage={images.kharkivjsBg.replace("/", "")} bgDarken={0.4}>
-            <Link href="https://github.com/denysdovhan">
-              <Image src={images.kharkivjsLogo.replace("/", "")} width="250px" />
-            </Link>
+            <Image src={images.kharkivjsLogo.replace("/", "")} width="250px" />
             <Heading textColor="white" margin=".2em auto 0">
               Hello, Kharkiv!
             </Heading>
