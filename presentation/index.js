@@ -415,8 +415,8 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Persistent command history</ListItem></Appear>
               <Appear><ListItem>Built-in help</ListItem></Appear>
               <Appear><ListItem>Piped commands</ListItem></Appear>
-              <Appear><ListItem>Built-in tabbed auto-completion</ListItem></Appear>
-              <Appear><ListItem>Command-specific auto-completion</ListItem></Appear>
+              <Appear><ListItem>Built-in tabbed autocompletion</ListItem></Appear>
+              <Appear><ListItem>Command-specific autocompletion</ListItem></Appear>
               <Appear><ListItem>Custom event listeners</ListItem></Appear>
             </List>
           </Slide>
