@@ -572,6 +572,18 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide>
+            <Heading size={4} textColor="secondary">
+              Learn more
+            </Heading>
+            <List>
+              <ListItem>git.io/js-shell-demos</ListItem>
+              <ListItem>git.io/bash-handbook</ListItem>
+              <ListItem>git.io/learnyoubash</ListItem>
+              <ListItem>github.com/alebcay/awesome-shell</ListItem>
+            </List>
+          </Slide>
+
+          <Slide>
             <Heading size={1} textColor="secondary">Thank you!</Heading>
             <Link href="https://twitter.com/denysdovhan">
               <Text margin="0.6em auto 0" bold textColor="secondary">
