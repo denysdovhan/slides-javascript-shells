@@ -1,4 +1,7 @@
-$ ipconfig | grep IPv4 | sort
-IPv4 Address. . . . . . . . . . . : 10.10.40.50
-IPv4 Address. . . . . . . . . . . : 192.168.100.11
+$ dir | grep \<DIR\> | sort
+05.06.2016  14:36    <DIR>          Photos
+22.04.2016  17:05    <DIR>          Camera Uploads
+22.04.2016  17:11    <DIR>          Archives
+26.10.2016  10:45    <DIR>          Study
+30.09.2012  15:27    <DIR>          Public
 $ █
