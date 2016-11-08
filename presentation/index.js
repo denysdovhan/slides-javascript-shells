@@ -576,10 +576,10 @@ export default class Presentation extends React.Component {
               Learn more
             </Heading>
             <List>
-              <ListItem>git.io/js-shell-demos</ListItem>
-              <ListItem>git.io/bash-handbook</ListItem>
-              <ListItem>git.io/learnyoubash</ListItem>
-              <ListItem>github.com/alebcay/awesome-shell</ListItem>
+              <Link href="http://git.io/js-shell-demos"><ListItem>git.io/js-shell-demos</ListItem></Link>
+              <Link href="http://git.io/bash-handbook"><ListItem>git.io/bash-handbook</ListItem></Link>
+              <Link href="http://git.io/learnyoubash"><ListItem>git.io/learnyoubash</ListItem></Link>
+              <Link href="http://github.com/alebcay/awesome-shell"><ListItem>github.com/alebcay/awesome-shell</ListItem></Link>
             </List>
           </Slide>
 
