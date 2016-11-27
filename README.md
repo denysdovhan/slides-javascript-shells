@@ -32,5 +32,9 @@ $ vorpal
 $ awkward
 ```
 
+## License
+
+MIT © [Denys Dovhan](http://denysdovhan.com)
+
 [travis-url]: https://travis-ci.org/denysdovhan/slides-javascript-shells
 [travis-image]: https://img.shields.io/travis/denysdovhan/slides-javascript-shells.svg?style=flat-square
