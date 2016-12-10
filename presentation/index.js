@@ -70,7 +70,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={["slide"]} bgColor="white">
             <Link href="https://github.com/denysdovhan" target="_blank">
-              <Image src={images.github.replace("/", "")} width="100%" />
+              <Image src={images.github.replace("/", "")} width="100%" margin="-1em auto" />
             </Link>
           </Slide>
 
