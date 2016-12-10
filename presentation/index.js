@@ -589,7 +589,7 @@ export default class Presentation extends React.Component {
               </Text>
             </Link>
             <Text textSize="0.6em" margin="1em auto 0">
-              5-6 Nov 2016
+              10 Dec 2016
             </Text>
             <Link href="http://denysdovhan.com/slides-javascript-shells" >
               <Text margin="3em auto 0" textColor="secondary">
