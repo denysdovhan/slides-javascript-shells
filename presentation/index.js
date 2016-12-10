@@ -33,8 +33,7 @@ import "spectacle/lib/themes/default/index.css";
 
 // Images
 const images = {
-  kharkivjsBg: require("../assets/kharkivjs-bg.jpg"),
-  kharkivjsLogo: require("../assets/kharkivjs-logo.png"),
+  ternopilBg: require("../assets/ternopil-bg.jpg"),
   shells: require("../assets/shells-on-the-beach.jpg"),
   github: require("../assets/denysdovhan-github.png"),
   nodeschoolBg: require("../assets/nodeschool-bg.png"),
@@ -63,10 +62,9 @@ export default class Presentation extends React.Component {
       <Spectacle theme={theme}>
         <Deck transition={["fade"]} transitionDuration={500}>
 
-          <Slide bgImage={images.kharkivjsBg.replace("/", "")} bgDarken={0.4}>
-            <Image src={images.kharkivjsLogo.replace("/", "")} width="250px" />
+          <Slide bgImage={images.ternopilBg.replace("/", "")} bgDarken={0.4}>
             <Heading textColor="white" margin=".2em auto 0">
-              Hello, Kharkiv!
+              Hello, Ternopil!
             </Heading>
           </Slide>
 
