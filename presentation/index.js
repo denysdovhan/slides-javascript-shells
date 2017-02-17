@@ -33,8 +33,8 @@ import "spectacle/lib/themes/default/index.css";
 
 // Images
 const images = {
-  kharkivjsBg: require("../assets/kharkivjs-bg.jpg"),
-  kharkivjsLogo: require("../assets/kharkivjs-logo.png"),
+  minsk: require("../assets/minsk.jpg"),
+  rsconf: require("../assets/rsconf-logo.svg"),
   shells: require("../assets/shells-on-the-beach.jpg"),
   github: require("../assets/denysdovhan-github.png"),
   nodeschoolBg: require("../assets/nodeschool-bg.png"),
