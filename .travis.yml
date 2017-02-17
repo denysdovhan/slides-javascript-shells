@@ -1,9 +1,10 @@
 language: node_js
-node_js:
-- v6
+node_js: node
+branches:
+  only: master
 before_script:
 - git config --global user.email "email@denysdovhan.com"
-- git config --global user.name "Travis Builder"
+- git config --global user.name "Denys Dovhan"
 - git remote rm origin
 - git remote add origin https://denysdovhan:${GH_TOKEN}@github.com/denysdovhan/slides-javascript-shells.git
 script:
