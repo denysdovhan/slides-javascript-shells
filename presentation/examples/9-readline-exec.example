@@ -1,0 +1,18 @@
+//...
+import { exec } from 'child_process';
+
+// ...
+
+shell
+  // Execute typed command through bash and write the result
+  .on('line', (line) => {
+    const command = exec(line, { shell: 'bash' }, (err) => {
+      if (err) {
+        console.log(err.toString());
+        shell.prompt();
+      }
+    });
+    command.stdout.on('data', data => console.log(data));
+    command.stdout.on('close', () => shell.prompt());
+  })
+  // ...

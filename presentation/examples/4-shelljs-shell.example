@@ -1,0 +1,22 @@
+if ! which git > /dev/null; then
+    echo 'Sorry, this script requires git'
+    exit 1
+fi
+
+# Copy files to release dir
+rm -rf out/Release
+cp -R stuff/ out/Release
+
+# Replace version in each .js file
+cd lib
+for file in *.js; do
+  echo $file
+  sed -i 's/BUILD_VERSION/v0.1.2/g' $file
+done
+cd ..
+
+git commit -am "Auto-commit"
+if [ $? -ne 0 ]; then
+  echo 'Error: Git commit failed'
+  exit 1
+fi
