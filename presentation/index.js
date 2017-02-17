@@ -62,17 +62,16 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={["fade"]} transitionDuration={500}>
-
-          <Slide bgImage={images.kharkivjsBg.replace("/", "")} bgDarken={0.4}>
-            <Image src={images.kharkivjsLogo.replace("/", "")} width="250px" />
+          <Slide bgImage={images.minsk.replace("/", "")} bgDarken={0.5}>
+            <Image src={images.rsconf.replace("/", "")} width="400px" margin="0.5rem auto auto -2em" />
             <Heading textColor="white" margin=".2em auto 0">
-              Hello, Kharkiv!
+              Hello, Minsk!
             </Heading>
           </Slide>
 
           <Slide transition={["slide"]} bgColor="white">
             <Link href="https://github.com/denysdovhan" target="_blank">
-              <Image src={images.github.replace("/", "")} width="100%" />
+              <Image src={images.github.replace("/", "")} width="100%" margin="-1em auto auto" />
             </Link>
           </Slide>
 
